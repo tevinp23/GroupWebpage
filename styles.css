@@ -1,22 +1,24 @@
 /* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F8F9FA;
     margin: 0;
     padding: 0;
+    color: #212529;
 }
 
 /* Header section styling */
 header {
-    background: #333;
-    color: #fff;
+    background: linear-gradient(135deg, #003865, #005792);
+    color: #F4F4F4;
     padding: 10px 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 300px;
     margin-top: 10px;
 }
 
@@ -26,8 +28,8 @@ header nav {
 }
 
 header nav button {
-    background: #007BFF;
-    color: white;
+    background: #046A38;
+    color: #fff;
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -36,21 +38,25 @@ header nav button {
 }
 
 header nav button:hover {
-    background: #0056b3;
+    background: #034C2B;
 }
 
 /* Flex container for team bios and vision sections */
 .container {
-    width: 80%;
-    margin: 20px auto;
+    width: 85%;
+    margin: 40px auto;
     display: flex;
+    background: #8fa5ba;
+    border-radius: 12px;
+    padding: 30px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid #9fafc2;
 }
-
 /* Card styling for individual team bios */
 .card {
-    background: white;
+    background: rgba(255, 255, 255, 0.75);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -72,12 +78,12 @@ h2 {
 .bio {
     display: none;
     margin-top: 10px;
-    color: #555;
+    color: #495057;
 }
 
 /* Button styling */
 button {
-    background: #007BFF;
+    background: #046A38;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -86,5 +92,51 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #034C2B;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.moodboard {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    text-align: left;
+}
+
+.moodboard h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.mood-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.mood-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.mood-links a {
+    color: #0C7C59;
+    text-decoration: none;
+}
+
+.mood-links a:hover {
+    text-decoration: underline;
+    color: #064C3C;
 }

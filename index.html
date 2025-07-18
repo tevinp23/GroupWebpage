@@ -11,8 +11,7 @@
 <header>
     <h1>Meet Our Team</h1>
     <!-- Example team logo -->
-    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
-
+    <img src="img/Black%20White%20Minimalist%20University%20Logo%20Design.png" alt="Team Logo" class="team-logo">
     <!-- Navigation menu to switch between sections -->
     <nav>
         <button onclick="showSection('bios')">Team Bios</button>
@@ -24,11 +23,30 @@
 <div id="bios" class="container">
     <!-- Each card represents an individual team member -->
     <div class="card">
-        <h2>John Doe</h2>
-        <p>Frontend Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    <h2>Tevin Parathattal</h2>
+    <img src="img/tevinimages/tevin.jpeg" alt="Tevin Avatar" class="avatar">
+    <p>Scrum Master & Full-Stack Developer</p>
+    <button onclick="toggleBio('bio1')">Show Bio</button>
+    <p id="bio1" class="bio">
+        Tevin majors in Finance, Computer Science, and Mathematics who thrives at the intersection of data, design, and decision-making. As Scrum Master, he orchestrates productivity and flow while bringing a founder's mindset to every sprint.
+    </p>
+    <div class="moodboard">
+        <h3>Tevin's Moodboard</h3>
+        <div class="mood-images">
+            <img src="img/tevinimages/bitcoin.png" alt="Bitcoin" class="mood-image" title="Bitcoin Protocol">
+            <img src="img/tevinimages/aristotle.jpg" alt="Claude Shannon" class="mood-image" title="Claude Shannon, Father of Information Theory">
+            <img src="img/tevinimages/vscode.png" alt="VS Code" class="mood-image" title="VS Code">
+            <img src="img/tevinimages/ycombinator.png" alt="Paul Graham, Founder of Y Combinator" class="mood-image" title="Paul Graham Essays">
+        </div>
+        <div class="mood-links">
+            <a href="https://github.com/tevinp23" target="_blank">🌐 GitHub</a><br>
+            <a href="https://www.linkedin.com/in/tevinpara/" target="_blank">🔗 Linkedin </a><br>
+            <a href="https://www.paulgraham.com/articles.html" target="_blank">✍️ Paul Graham Articles</a><br>
+            <a href="https://en.wikipedia.org/wiki/Aristotle" target="_blank">🤔 Aristotle</a><br>
+        </div>
+        <p>Inspired by systems thinking, cool people, and the pursuit of elegant simplicity.</p>
     </div>
+</div>
     <div class="card">
         <h2>Jane Smith</h2>
         <p>Backend Developer</p>
@@ -41,14 +59,31 @@
         <button onclick="toggleBio('bio3')">Show Bio</button>
         <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
     </div>
+    <div class="card">
+        <h2>John Doe</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    </div>
+    <div class="card">
+        <h2>John Doe</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">John is a skilled frontend developer with 5 years of experience in creating responsive web applications.</p>
+    </div>
 </div>
 
-<!-- Team vision/mission statement section (hidden by default) -->
+<!-- Team vision/mission statement section -->
 <div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <img src="img/unc-charlotte-logo.png" alt="UNC Charlotte Logo" style="width: 180px; max-width: 90%; margin-bottom: 10px;">
+    </div>
+    <h2 style="text-align: center; color: #004b23;">Our Mission Statement</h2>
+    <p style="max-width: 700px; margin: 0 auto; font-size: 1.05rem; line-height: 1.6; color: #374151; text-align: center;">
+        <strong>At UNC Charlotte, we strive to embody innovation, integrity, and impact.</strong><br>
+        Our team is committed to building thoughtful, user-centered solutions that reflect the values of collaboration, academic excellence, and technical mastery. We aim to push boundaries while staying grounded in the responsibility that comes with technical leadership.
+    </p>
 </div>
-
 <script src="script.js"></script> <!-- Link to external JavaScript file -->
 
 </body>
